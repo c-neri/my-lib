@@ -1,5 +1,5 @@
 {
-  "name": "@my-lib/button",
+  "name": "@cridev-lib-test/button",
   "version": "0.0.6",
   "publishConfig": {
     "access": "public"
