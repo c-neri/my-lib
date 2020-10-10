@@ -1,6 +1,6 @@
 {
   "name": "@my-lib/button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "url": "https://github.com/c-neri/my-lib",
   "publishConfig": {
     "access": "https://npm.pkg.github.com"
