@@ -3,7 +3,7 @@
   "version": "0.0.3",
   "url": "https://github.com/c-neri/my-lib",
   "publishConfig": {
-    "access": "https://npm.pkg.github.com"
+    "access": "public"
   },
-  "gitHead": "7e561576fd90e4730b169854992b284ee9af28ed"
+  "gitHead": "b72df9d65866aa4caf89c34c7c47b5edd1b7f65e"
 }
