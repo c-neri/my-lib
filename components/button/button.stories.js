@@ -1,34 +1,75 @@
-import { storiesOf } from '@storybook/vue'
-import JTableRow from './button'
+import myButton from './button'
 
-storiesOf('my-table', module)
-  .add('normal', () => ({
-    components: { JTableRow },
-    template:
-    `
-      <JTableRow
-        :values="values"
-      />
-    `,
-    data: () => ({
-      values: [
-        'José Silva',
-        'email@email.test@test.com'
-      ]
-    })
-  }))
-  .add('cool', () => ({
-    components: { JTableRow },
-    template:
-    `
-      <JTableRow
-        :values="values"
-      />
-    `,
-    data: () => ({
-      values: [
-        'me test',
-        'email@email.test@test.com'
-      ]
-    })
-  }))
+export default { title: 'Components/Button' };
+
+export const Rounded = () => ({
+  components: { myButton },
+  template: '<my-button :value="value" isRounded /><my-button/',
+  data(){
+    return {
+      value:'hello!'
+    }
+  }
+});
+
+export const Big = () => ({
+  components: { myButton },
+  template: '<my-button :value="value" isRounded isBig /><my-button/',
+  data(){
+    return {
+      value:'Big'
+    }
+  }
+});
+
+
+
+
+
+
+
+
+
+
+// import { storiesOf } from '@storybook/vue'
+// storiesOf('my-button', module)
+//   .add('normal', () => ({
+//     components: { myButton },
+//     template:
+//     `
+//       <my-button :value="valueButton"><my-button/>
+//     `,
+//     data: () => ({
+//       valueButton: 'hello!'
+//     })
+//   }))
+//   .add('rounded', () => ({
+//     components: { myButton },
+//     template:
+//     `
+//     <my-button :value="valueButton" isRounded><my-button/>
+//     `,
+//     data: () => ({
+//       valueButton: 'subscribe now!'
+//     })
+//   }))
+//   .add('big', () => ({
+//     components: { myButton },
+//     template:
+//     `
+//     <my-button :value="valueButton" isBig><my-button/>
+//     `,
+//     data: () => ({
+//       valueButton: 'Button'
+//     })
+//   }))
+//   .add('big and round', () => ({
+//     components: { myButton },
+//     template:
+//     `
+//     <my-button :value="valueButton" isBig isRounded><my-button/>
+//     `,
+//     data: () => ({
+//       valueButton: 'Button'
+//     })
+//   }))

@@ -1,30 +1,42 @@
 <template>
-  <tr>
-    <td v-for="(value, index) in values" :key="index">
-      {{ value }}
-    </td>
-  </tr>
+  <button 
+    class="my-button"
+    :class=[{rounded:isRounded},{big:isBig}] >
+    {{ value }}
+  </button>
 </template>
 
 <script>
 export default {
-  name: 'JTableRow',
+  name: 'my-button',
   props: {
-    values: {
-      type: Array,
+    value: {
+      type: String,
       required: true
+    },
+    isRounded:{
+      type:Boolean
+    },
+    isBig:{
+      type:Boolean
     }
   }
 }
 </script>
 
 <style scoped>
-tr {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.08);
+.my-button{
+  border: none;
+  padding:8px 15px;
 }
-td {
-  padding: 8px;
+.button{
+  padding: 10px 20px;
+}
+.rounded{
+  border-radius:20px;
+}
+.big{
+  padding: 15px 30px;
+  size: 20px;
 }
 </style>
