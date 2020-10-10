@@ -4,7 +4,7 @@ export default { title: 'Components/Button' };
 
 export const Rounded = () => ({
   components: { myButton },
-  template: '<my-button :value="value" isRounded /><my-button/',
+  template: '<my-button :value="value" isRounded />',
   data(){
     return {
       value:'hello!'
@@ -14,7 +14,7 @@ export const Rounded = () => ({
 
 export const Big = () => ({
   components: { myButton },
-  template: '<my-button :value="value" isRounded isBig /><my-button/',
+  template: '<my-button :value="value" isRounded isBig />',
   data(){
     return {
       value:'Big'
