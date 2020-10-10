@@ -1,6 +1,7 @@
 <template>
   <button 
     class="my-button"
+    
     :class=[{rounded:isRounded},{big:isBig}] >
     {{ value }}
   </button>
