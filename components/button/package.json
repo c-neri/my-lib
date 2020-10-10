@@ -1,7 +1,7 @@
 {
-    "name": "@my-lib/button",
-    "version": "0.0.0",
-    "publishConfig": {
-      "access": "public"
-    }
+  "name": "@my-lib/button",
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
   }
+}
