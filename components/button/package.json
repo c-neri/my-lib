@@ -1,7 +1,9 @@
 {
   "name": "@my-lib/button",
   "version": "0.0.1",
+  "url": "https://github.com/c-neri/my-lib",
   "publishConfig": {
-    "access": "public"
-  }
+    "access": "https://npm.pkg.github.com/"
+  },
+  "gitHead": "914fde24541a1165f4c6138e87733d51fcb4ca5a"
 }
